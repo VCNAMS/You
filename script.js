@@ -10,17 +10,17 @@ const CONFIG = {
   letter: "Dear Arn May Kyle Armero, \n\nThank you sa tanan gud 💜. Thank you for giving me a chance to know you. Thank you for being honest at the first, Thank you for not giving false hope gud. Thank you gud for being open gud sa akoa. I really appreciate everything gud Armie. Thank you pud for being gentle with my feelings gud. I know surprising cya the moment nga ning confess ko ato hehe, but I'm very genuine about what I felt about you, I do really like you not just a friend but more 💜. \n\nI really want to give you the best version of myself. I'm ready to give more effort for us , I'm ready for the man that you want me to be, I'm ready to take care of you, I'm ready to value you, respect you.  I'm ready to give a part of me for you, I'm ready to walk with you, I'm ready for the hurt, the pain, I'm ready to lead us for the path that God has set for us, I'm ready to love you of who you are, love your insecurities, your Flaws, your mistakes, your attitude, your moods, your Family, your life, and love us.\n\nI know this sounds too cliche HAHAAA, pero wala itong halong biro gud Hahahah, We've seen how both of us fall for each other. At first I thought nga wala koy chance sa imoa or kaya e reject ko nimo. But God has other plans gud. I really doubt myself gud. God knows how many times i give up on myself. Where i cried in the middle of night, in a random time at dawn. Asking myself 'Naa pabay koy chance mainlove ug tao, Im weak, bobo sa love, Blind ko if masakitan ko'. I dont know gud tbh. Pero God knows how many tears i shed . And God know how i wanted to have a partner. Not for fun and games, but for a lifetime gud, in good and bad, in sick or in health, in pain or not, in a boring season or exciting season, and where two souls feels safe. Until i met you and know you. Wala ko ga expect nga ikaw. A girl nga na kit an nko sa POV nko sa enrollment sa first year of college then ang ga tabang nko sa Face ratio. Wala ko ga dahom nga ma deeper akong ma feel nimo. And i will cherish that forever.\n\n\n\n\n\n\nSincerely yours,\nJames.",
   // ← YOUR PHOTOS: put files in assets/photos/ and edit the captions/dates here
   photos: [
-    {src:"assets/photos/photo-01.jpg", caption:"Your Eyes"},
-    {src:"assets/photos/photo-02.jpg", caption:"My First Photo of you"},
-    {src:"assets/photos/photo-03.jpg", caption:"My favorite smile"},
-    {src:"assets/photos/photo-04.jpg", caption:"Just us"},
-    {src:"assets/photos/photo-05.jpg", caption:"Little adventures"},
-    {src:"assets/photos/photo-06.jpg", caption:"Still choosing you"},
-    {src:"assets/photos/photo-07.jpg", caption:"You 💜"},
-    {src:"assets/photos/photo-08.jpg", caption:"It will always be you"},
-    {src:"assets/photos/photo-09.jpg", caption:"Still the One"},
-    {src:"assets/photos/photo-10.jpg", caption:"Cutiee you"},
-    {src:"assets/photos/photo-11.jpg", caption:"This is for you"}
+    {src:"photo-01.jpg", caption:"Your Eyes"},
+    {src:"photo-02.jpg", caption:"My First Photo of you"},
+    {src:"photo-03.jpg", caption:"My favorite smile"},
+    {src:"photo-04.jpg", caption:"Just us"},
+    {src:"photo-05.jpg", caption:"Little adventures"},
+    {src:"photo-06.jpg", caption:"Still choosing you"},
+    {src:"photo-07.jpg", caption:"You 💜"},
+    {src:"photo-08.jpg", caption:"It will always be you"},
+    {src:"photo-09.jpg", caption:"Still the One"},
+    {src:"photo-10.jpg", caption:"Cutiee you"},
+    {src:"photo-11.jpg", caption:"This is for you"}
   ]
 };
 /* ================================================================ */

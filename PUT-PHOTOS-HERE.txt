@@ -1,0 +1,2 @@
+Put your photos here and name them photo-01.jpg ... photo-06.jpg
+(or change the filenames in the CONFIG block in script.js).

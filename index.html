@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>A Little Something for You 💜</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floaters" id="floaters" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <section class="screen active" id="landing">
+      <div class="hero panel">
+        <div class="heart" aria-hidden="true">💜</div>
+        <div class="section-header">
+          <h1 id="t-title"></h1>
+          <p class="sub" id="t-sub"></p>
+        </div>
+        <div class="action-row">
+          <button class="btn" data-go="hub">Open Your Gift</button>
+          <button class="btn ghost" id="later">Maybe Later</button>
+        </div>
+        <p id="laterMsg" class="message hand"></p>
+      </div>
+    </section>
+
+    <section class="screen" id="hub">
+      <div class="section-header">
+        <h2>Pick Something for You</h2>
+        <p class="sub">Three little surprises are waiting. Choose one 💜</p>
+      </div>
+
+      <div class="card-grid">
+        <button class="card" data-go="memories"><span class="ic">📸</span><b>Memories</b></button>
+        <button class="card" data-go="letter"><span class="ic">💌</span><b>A Letter</b></button>
+        <button class="card" data-go="flowers"><span class="ic">💐</span><b>Flowers</b></button>
+      </div>
+
+      <div class="action-row">
+        <button class="btn ghost" data-go="music">🎵 Play our song</button>
+        <button class="btn ghost" data-go="final">Finish ✨</button>
+      </div>
+    </section>
+
+    <section class="screen" id="memories">
+      <div class="section-header">
+        <h2>Our Little Memories</h2>
+        <p class="sub">Tap a photo to see it bigger.</p>
+      </div>
+
+      <div class="tools">
+        <label class="btn ghost" for="photoInput">➕ Add your photos</label>
+        <input id="photoInput" type="file" accept="image/*" multiple hidden>
+      </div>
+
+      <div class="grid" id="gallery"></div>
+      <button class="btn" data-go="hub">↩ Return</button>
+    </section>
+
+    <section class="screen" id="letter">
+      <div class="section-header">
+        <h2>A Letter for You</h2>
+      </div>
+      <div class="letter panel" id="letterBox" aria-live="polite"></div>
+      <div class="action-row">
+        <button class="btn ghost" id="replayLetter">Read again</button>
+        <button class="btn" data-go="hub">↩ Return</button>
+      </div>
+    </section>
+
+    <section class="screen" id="flowers">
+      <div class="section-header">
+        <h2>Flowers for You</h2>
+        <p class="sub">Tap the button and watch them bloom.</p>
+      </div>
+
+      <div class="bouquet panel" id="bouquet" aria-label="A bouquet of flowers"></div>
+      <div class="action-row">
+        <button class="btn ghost" id="bloom">🌷 Grow more</button>
+        <button class="btn" data-go="hub">↩ Return</button>
+      </div>
+    </section>
+
+    <section class="screen" id="music">
+      <div class="section-header">
+        <h2>Our Song</h2>
+        <p class="sub" id="t-song"></p>
+      </div>
+
+      <div class="player panel">
+        <div class="hand song-name" id="songName">Our Song 🎵</div>
+        <audio id="audio" preload="none"></audio>
+
+        <div class="row">
+          <button class="btn" id="play" aria-label="Play or pause">▶ Play our song</button>
+          <span id="cur">0:00</span>
+          <input type="range" id="seek" min="0" max="100" value="0" aria-label="Progress">
+          <span id="dur">0:00</span>
+        </div>
+
+        <div class="row utility-row">
+          <div class="volume-wrap">
+            <span>🔊</span>
+            <input type="range" id="vol" min="0" max="1" step=".05" value=".8" aria-label="Volume">
+          </div>
+          <label class="btn small" for="songInput">Choose song</label>
+          <input id="songInput" type="file" accept="audio/*" hidden>
+        </div>
+
+        <p id="musicNote" class="music-note"></p>
+      </div>
+
+      <button class="btn" data-go="hub">↩ Return</button>
+    </section>
+
+    <section class="screen" id="final">
+      <div class="hero panel">
+        <div class="heart" aria-hidden="true">💜</div>
+        <h2 id="t-final"></h2>
+        <button class="btn" id="replay">Replay From the Beginning</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <figure>
+      <img id="mImg" alt="">
+      <figcaption id="mCap"></figcaption>
+      <button class="btn" id="mClose">Close</button>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
